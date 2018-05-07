@@ -1,0 +1,6 @@
+<p>
+    <div *ngFor="let comment of comments">
+      {{ comment | json}}<button id={comment.id} (click)="onCommentClick(comment.id)" >Comment</button>
+      <!--<app-post-component></app-post-component>-->
+    </div>
+</p>
